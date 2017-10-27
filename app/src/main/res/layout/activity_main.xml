@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25c"
+    tools:context="com.example.abubaker.facebookapp.MainActivity">
+
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facebook"
+        android:id="@+id/facebookText"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:gravity="center"
+          android:textColor="#fff"
+          android:textStyle="bold"
+          android:textSize="30sp"/>
+
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/emailText"
+        android:layout_below="@+id/facebookText"
+          android:textColor="#fff"
+          android:layout_marginLeft="10sp"/>
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/EmailId"
+          android:layout_below="@id/emailText"
+          android:background="#fff"
+          android:layout_marginRight="10sp"
+          android:layout_marginLeft="10sp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordText"
+        android:layout_below="@id/EmailId"
+        android:text="Password"
+          android:textColor="#fff"
+          android:layout_marginLeft="10sp"
+        />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/PassworEditText"
+          android:background="#fff"
+          android:inputType="textPassword"
+          android:layout_marginLeft="10sp"
+          android:layout_marginRight="10sp"
+          android:layout_below="@id/passwordText"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Login"
+        android:id="@+id/checkbox"
+        android:layout_below="@id/PassworEditText"
+        android:checked="true"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need your account? \n Sign up using your phone"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+</RelativeLayout>
